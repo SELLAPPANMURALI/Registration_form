@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🏫Reg Form</title>  	                               
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./validation.js"></script> <!-- Corrected to script -->
+</head>
+<body>
+    <form  name="reg_form" onsubmit="return validate()" action="./connect.php" method="post" >
+        <img src="hinata.jpg" alt="logo" width="100" height="100" style="display: block;border-radius: 48%;margin: 0 auto; position: relative; left: 200px; top: 0px;">
+        <div>
+            <h2 style="text-align: center; color: rgb(63, 88, 21);">Registration Form</h2>
+        <table>
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="fname" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" placeholder="Address"></textarea></td> <!-- Changed to textarea -->
+            </tr>
+                  
+            <tr>
+                <td><label for="email">Email Id:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="example@gmail.com"></td> <!-- Changed to type="email" -->
+            </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td   width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;><input type="password" id="password" name="password" placeholder="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="tel" id="mobile" name="mobile"></td> <!-- Changed to type="tel" for better validation -->
+            </tr>
+            <tr>
+                <td ><label for="course">Course:</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="select course">Select course</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="reset" name="reset" value="Reset">
+                    <!-- <input type="submit" name="submit" value="submit"> -->
+                </td>
+            </tr>
+        </table>
+        <button type="submit" id="submit" name="submit">Submit</button>
+        <center>
+        <a href="./login.html"?">Login</a>
+    </center>
+</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: Calibri;
+    background: url("image.jpg");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri;
+    font-size: 20px;
+    background-color:rgb(238, 187, 249);
+    width: 100;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+button{
+    position: relative;
+    background-color: #cdd7e1;
+    align-items: center;
+    border-radius: 10px;
+    width: 40%;
+    left: 165px;
+    padding: 10px;
+    text-align: center;
+    
+    /* position: absolute; */
+     /* right: 0px; */
+    /* bottom: 10px; */
+
+}
+table {
+    width: 90%;
+}
+
+td {
+    padding: 10px;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+td:last-child {
+    text-align: left;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 41%;
+    position: relative;
+    left: 38px;
+    height: 40px;
+    margin: 10px 2.5%;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #d21d1d;
+    color: white;
+}
+ input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 100%) {
+    form {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    input[type="reset"] {
+        width: 90%;
+        margin: 10px 5%;
+    }
+}
